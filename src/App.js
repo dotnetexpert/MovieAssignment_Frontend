@@ -7,6 +7,7 @@ import CreateMovie from "./pages/create";
 import ProtectedRoute from "./utils/protectedRoutes"; // Import your ProtectedRoute component
 import './App.css';
 import './css/style.css';
+import './css/responsive.css';
 
 function App() {
   return (
