@@ -4,7 +4,7 @@ import { jwtDecode } from 'jwt-decode';
 
 const ProtectedRoute = ({ children }) => {
     
-    const token = localStorage.getItem('token'); // Get the token from local storage
+     const token = localStorage.getItem('token') || sessionStorage.getItem('token'); 
     let location = useLocation();
 
     // Helper function to check if the token is expired
