@@ -52,7 +52,7 @@ const Movie = () => {
     return (
         <>
             {loading ? (
-                <div className="loading">Loading movies...</div>
+               <div className="loading"><img src="images/Spinner.gif"/></div>
             ) : movieList.length > 0 ? (
                 <div className="my-movies-page inner-page">
                     <div className="custom-container">
