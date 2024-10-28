@@ -26,5 +26,5 @@ h2 {font-size: 32px;line-height: 40px;}
 .publishing-year-input, .movie-details-form {max-width: inherit;}
 .movie-details-form .form-buttons {display: none;}
 .create-edit-movie-wrapper {gap: 0;}
-body{background-image: url(../images/mobile-bottom-layers.png);}
+body{background-image: url(../../public/images/mobile-bottom-layers.png);}
 }
