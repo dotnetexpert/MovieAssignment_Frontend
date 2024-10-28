@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://cdn-uicons.flaticon.com/2.6.0/uicons-bold-rounded/css/uicons-bold-rounded.css');
+/* Global css */
+*{padding: 0; margin:0; box-sizing: border-box;}
+html, body{min-height: 100vh;}
+body{font-family: "Montserrat", sans-serif;font-optical-sizing: auto;font-weight: 400;font-style: normal;background: #093545;background-image: url(/public/images/bottom-layers.png);background-size: 100%;background-repeat: no-repeat;background-position: bottom;color:#ffffff; padding-bottom: 200px;}
+h1, h2, h3, h4, h5, h6, p, label, input, select, button{font-family: "Montserrat", sans-serif;}
+h1 {font-size: 64px;line-height: 80px;font-weight: 600;}
+h2{font-size: 48px;font-weight: 600;line-height: 56px;}
+.custom-container{width: 100%; max-width: 1248px; padding: 0 24px; margin:auto;}
+.btn{font-size: 16px;font-weight: 700;line-height: 24px;color: #fff;border: 1px solid #ffffff;padding: 14px 10px;width: 100%;border-radius: 10px;font-family: "Montserrat", sans-serif; cursor: pointer; transition: 0.3s ease-in-out; -webkit-transition: 0.3s ease-in-out; -moz-transition: 0.3s ease-in-out; overflow: hidden; position: relative;}
+.btn span{position: relative; z-index: 1;}
+.btn::after { border-radius:10px; position: absolute;left: 0; top: 0; width: 100%; height: 100%; background: #20c271; content: ''; transform: translateX(-100%); transition: 0.3s ease-in-out;  -moz-transition: 0.3s ease-in-out; -webkit-transition: 0.3s ease-in-out;}
+.btn:hover::after {transform: none;}
+.btn-primary {background: #2BD17E; border-color: #2BD17E;}
+.btn-secondary {background: transparent;}
+.btn-secondary::after {background: #224957;}
+.text-center{text-align: center;}
+.inner-page{padding-top: 120px;}
+.font-large{font-size: 20px; line-height: 32px;}
+.font-small{font-size: 14px; line-height: 24px;}
+/* Authentication page */
+.authentication-page {display: flex;height: 100%;width: 100%;justify-content: center;align-items: center;padding: 100px 20px 0; min-height: calc(100vh - 200px);}
+.form-group{margin-bottom: 24px;}
+.form-remember {display: flex; justify-content: center; gap: 8px;}
+.auth-box {width: 300px;}
+.auth-box form {margin-top: 40px;}
+.form-control {font-size: 14px; border: none;width: 100%;border-radius: 10px;background: #224957; padding: 13.5px 16px; color: #ffffff; outline: none;}
+.form-control::placeholder {color: #ffffff;opacity: 1;}  
+.form-control::-webkit-input-placeholder {color: #ffffff;}  
+.form-control::-ms-input-placeholder {color: #ffffff;}
+.custom-checkbox {width: 18px;height: 17px;position: relative;border-radius: 5px;background: #224957;}
+.custom-checkbox input {position: absolute;left: 0;top: 0;height: 100%;width: 100%;opacity: 0;z-index: 9;}
+.form-remember label {font-size: 14px; cursor: pointer;}
+.custom-checkbox .fi {font-size: 13px; position: relative;top: 0px;left: 2px; opacity: 0;}
+.custom-checkbox input[type="checkbox"]:checked ~ .fi{opacity: 1;}
+.register-link {margin-top: 8px; text-align: center; font-size: 13px;}
+.register-link a {color: #2bd17e; text-decoration: none;}
+span[role=alert] {color: #ff0000; font-size: 14px;}
+/* Movies Page */
+.movie-empty-page{display: flex;height: 100%;width: 100%;justify-content: center;align-items: center;padding: 100px 20px 0; min-height: calc(100vh - 200px);}
+.movie-empty-box button {max-width: 202px;}
+.movie-empty-box h2 {margin-bottom: 40px;}
+/* My Movies */
+.my-movies-heading h2 {display: inline-flex; gap: 12px; align-items: center;}
+.flex-heading {display: flex;align-items: center; justify-content: space-between; gap: 10px;}
+.flex-heading h2 {display: flex; gap: 12px; align-items: center;}
+.flex-heading h2 span{cursor: pointer;}
+.flex-heading h2 a {height: 32px;}
+.flex-heading h2 a img {vertical-align: top;}
+.logout-action {font-size: 16px; color: #fff; text-decoration: none; display: flex;  align-items: center;  font-weight: bold;   gap: 12px;  line-height: 24px; cursor: pointer;}
+.inner-page-main-heading{margin-bottom: 120px;}
+.movie-box {background: #092C39;padding: 8px;border-radius: 12px;margin-bottom: 24px; cursor: pointer;}
+.movies-list-wrapper {display: flex; gap:2%; flex-wrap: wrap; margin-bottom: 96px;}
+.movie-box-desc .movie-name {margin-bottom: 10px;}
+.movie-box figure {font-size: 0;border-radius: 12px;overflow: hidden;}
+.movie-box figure img {height: 400px; width: 100%; object-fit: cover;}
+.movie-box-desc {padding: 15px 5px 7px;}
+.movies-list-wrapper .movie-box {width: 23.5%;}
+.my-movies-page {padding-bottom: 10px;}
+.movie-image-uploader .drop-area {overflow: hidden;}
+.movie-image-uploader .drop-area img {max-width: 100%; width: 100%; height: 100%;object-fit: cover;}
+/* Pagination */
+.custom-pagination {display: flex;justify-content: center;align-items: center;  gap: 8px;}
+.custom-pagination .prev-page {margin-right: 8px;}
+.custom-pagination .next-page {margin-left: 8px;}
+.custom-pagination span{cursor: pointer; color:#fff; text-decoration:none;background: #092C39;font-size: 16px;font-weight: bold;height: 32px;width: 32px;border-radius: 4px;display: flex;align-items: center;justify-content: center;transition: 0.2s ease-in-out;-webkit-transition: 0.2s ease-in-out;-moz-transition: 0.2s ease-in-out;line-height: 24px;}
+.custom-pagination .prev-page, .custom-pagination .next-page {background: transparent;width: auto;height: auto;}
+.custom-pagination .active, .custom-pagination :hover {background: #2BD17E;}
+.custom-pagination .prev-page:hover, .custom-pagination .next-page:hover{background:transparent; color:#2bd17e;}
+/* Create/Edit Movie */
+.create-edit-movie-wrapper{width: 100%; max-width: 962px; display: flex; justify-content: space-between; gap:15px;}
+.movie-image-uploader {width: 473px; background: #224957; color: #fff; border: 2px dashed #fff; border-radius: 10px;display: flex;justify-content: center;align-items: center; position: relative; min-height: 504px;}
+.movie-image-uploader input[type=file] {position: absolute; height: 100%; width: 100%; left: 0; top: 0; z-index: 9; opacity: 0;}
+.drop-image-text img {margin-bottom: 12px;}
+.movie-details-form {width: 100%;max-width: 362px;}
+.publishing-year-input{max-width: 216px;}
+.create-edit-movie-wrapper .form-buttons {display: flex; gap:16px;padding-top: 40px;}
+
+

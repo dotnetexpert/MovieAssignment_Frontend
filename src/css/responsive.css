@@ -1,0 +1,30 @@
+/* Responsive */
+@media screen and  (min-width: 767.5px) {
+    .desktop-hidden-buttons{display: none;}
+}
+@media screen and (max-width: 991px) {
+    .movies-list-wrapper .movie-box {width: 32%;}
+}
+@media screen and (max-width: 767px) {
+h1 {font-size: 48px;line-height: 56px;}
+h2 {font-size: 32px;line-height: 40px;}
+.auth-box {width: 100%;max-width: 380px;}
+.inner-page-main-heading {margin-bottom: 80px;}
+.inner-page {padding-top: 80px;}
+.logout-action {font-size: 0;}
+.movie-box{padding: 0;}
+.movies-list-wrapper .movie-box {width: 48.5%;}
+.movies-list-wrapper {gap: 3%;}
+.movie-box-desc {padding: 12px;}
+.font-large {font-size: 16px; line-height: 24px;}
+.movie-box-desc .movie-name{font-weight: 700;}
+.movie-box figure img{height: 246px;}
+.movie-box figure{border-radius: 0;}
+.movies-list-wrapper{margin-bottom: 56px;}
+.create-edit-movie-wrapper {flex-direction: column-reverse;}
+.movie-image-uploader {width: 100%; min-height: 372px;}
+.publishing-year-input, .movie-details-form {max-width: inherit;}
+.movie-details-form .form-buttons {display: none;}
+.create-edit-movie-wrapper {gap: 0;}
+body{background-image: url(../images/mobile-bottom-layers.png);}
+}
