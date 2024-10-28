@@ -33,7 +33,9 @@ const Movie = () => {
     };
 
     const handleLogout = () => {
-        localStorage.removeItem('token');
+        localStorage.removeItem("token");
+        localStorage.removeItem("email");
+        sessionStorage.removeItem("token");
         navigate('/'); 
     };
 
