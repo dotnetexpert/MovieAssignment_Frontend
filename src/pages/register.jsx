@@ -29,7 +29,8 @@ const Register = () => {
             }
         } catch (error) {
             console.error("Error during registration:", error);
-            toast.error('Error during registration. Please try again.'); // Error message
+            const errorMessage = error.response.data.error || 'Error during registration. Please try again.';// Extract error message if available
+            toast.error(errorMessage); // Error message
         }
     };
 
