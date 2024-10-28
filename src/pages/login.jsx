@@ -37,13 +37,15 @@ const Login = () => {
       const response = await apiService.post("/auth/login", payload);
 
       if (response && response.status === 200 && response.data.message) {
-        localStorage.setItem('token', response.data.token); // Store the token in localStorage
+        const token = response.data.token;
 
         // Save email if remember me is checked
         if (rememberMe) {
-          localStorage.setItem('email', data.email);
+          localStorage.setItem("token", token);
+          localStorage.setItem("email", data.email);
         } else {
-          localStorage.removeItem('email'); // Clear email if not checked
+          sessionStorage.setItem("token", token); 
+          localStorage.removeItem("email");// Clear email if not checked
         }
 
         // Navigate to the home page
